@@ -20,7 +20,7 @@ searchForm.addEventListener('submit', event => {
   }
   galleryList.innerHTML = '<span class"loader"></span>';
 
-  fetchingGallery(userInput)
+  fetchingGallery(userRequest)
     .then(process => {
       if (!process.length) {
         iziToast.error({
