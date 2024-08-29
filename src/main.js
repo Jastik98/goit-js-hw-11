@@ -18,7 +18,7 @@ searchForm.addEventListener('submit', event => {
   if (!userRequest) {
     return;
   }
-  galleryList.innerHTML = '<span class"loader"></span>';
+  galleryList.innerHTML = '<span class="loader"></span>';
 
   fetchingGallery(userRequest)
     .then(process => {
